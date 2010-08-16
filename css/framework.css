@@ -42,7 +42,7 @@ blockquote{padding:10px; background:#ccc; font-size:14px;}
 
 /* @group Lists */
 
-ul li, ol li{margin:0 0 10px 15px;}
+ul li, ol li{margin:0 0 10px 30px;}
 ul ul, ol ol{margin:10px 0 0 0;}
 
 /* @end */

@@ -6,20 +6,14 @@
   <!-- www.phpied.com/conditional-comments-block-downloads/ -->
   <!--[if IE]><![endif]-->
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame Remove this if you use the .htaccess -->
   <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
 
   <title>Artminister CSS Framework</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--  Mobile Viewport Fix
-        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
-  device-width : Occupy full width of the screen in its current orientation
-  initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
-  -->
+  <!--  Mobile Viewport Fix    j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag   -->
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 
 
@@ -31,9 +25,7 @@
   <!-- CSS : implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=1">
   <link rel="stylesheet" href="css/framework.css?v=1">
-
-  <!-- For the less-enabled mobile browsers like Opera Mini -->
-  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
+  <link rel="stylesheet" href="css/iphone.css" type="text/css" media="screen and (max-width: 480px)" />
 
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -351,13 +343,11 @@
 	<!-- / Wrapper -->
 
 
-
   <!-- Javascript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
-
 
   <script src="js/plugins.js?v=1"></script>
   <script src="js/script.js?v=1"></script>
@@ -365,12 +355,6 @@
   <!--[if lt IE 7 ]>
     <script src="js/dd_belatedpng.js?v=1"></script>
   <![endif]-->
-
-
-  <!-- yui profiler and profileviewer - remove for production -->
-  <script src="js/profiling/yahoo-profiling.min.js?v=1"></script>
-  <script src="js/profiling/config.js?v=1"></script>
-  <!-- end profiling code -->
 
 
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
