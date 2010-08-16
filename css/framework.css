@@ -91,3 +91,23 @@ table th, table td{padding:5px;}
 form input, form label{display:inline; vertical-align:middle;}
 
 /* @end */
+
+/* @group Float Clearing */
+
+.clearfix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+	
+	/* IE Float Clearing */
+	
+	.ie6 .clearfix, .ie7 .clearfix {display:inline-block;}
+
+/* @end */
+
+/* @group Credits */
+
+Thierry Koblentz
+Paul Irish
+Blueprintcss
+Tripoli
+Mollio
+
+/* @end */
