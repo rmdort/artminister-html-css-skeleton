@@ -6,13 +6,13 @@
 
 /* @group Body */
 
-body{background:#fff;}
+body{background:#fff; font-size:12px;}
 
 /* @end */
 
 /* @group Wrapper */
 
-.wrapper{width:960px; margin:0 auto; font-size:12px; line-height:1.4;}
+.wrapper{width:960px; margin:0 auto; line-height:1.4;}
 
 /* @end */
 
@@ -109,5 +109,6 @@ Paul Irish
 Blueprintcss
 Tripoli
 Mollio
+Diveintohtml5 - http://diveintohtml5.org
 
 /* @end */

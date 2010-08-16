@@ -8,3 +8,7 @@ Yes. The new files that i have added are
 
 css/framework.css
 index.html - Modified to add basic html
+
+## Can i use these files without html5boiler plate
+
+Yes sure. Only dependent file is css/style.css for browser resets

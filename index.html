@@ -259,6 +259,26 @@
 		</section>
 		
 		<section>
+			<h2>Microdata</h2>
+			
+			<section itemscope itemtype="http://data-vocabulary.org/Person">
+			  	<h3 itemprop="name">Mark Pilgrim</h3>
+			  	<p><img src="http://www.example.com/photo.jpg" alt="[me smiling]" itemprop="photo"></p>
+			  	<p><a href="http://diveintomark.org/" itemprop="url">Person URL</a></p>
+				<p><span itemprop="title">Developer advocate</span> for <span itemprop="affiliation">Google, Inc.</span></p>
+				<p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+				      <span itemprop="street-address">100 Main Street</span><br>
+				      <span itemprop="locality">Anytown</span>,
+				      <span itemprop="region">PA</span>
+				      <span itemprop="postal-code">19999</span>
+				      <span itemprop="country-name">USA</span>
+				</p>
+			</section>
+			
+			<p>For more microdata scenarios visit <a href="http://diveintohtml5.org/extensibility.html#what-is-microdata">http://diveintohtml5.org/extensibility.html#what-is-microdata</a></p>
+		</section>
+		
+		<section>
 			<h2>Forms</h2>
 			
 			<form id="dummy" action="" method="post">
