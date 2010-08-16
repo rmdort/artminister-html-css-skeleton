@@ -60,6 +60,19 @@
 	<!-- Wrapper -->
 	<div class="wrapper">
 		
+		<!-- Navigation -->
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- / Navigation -->
+		
+		<hr>
+		
 		<!-- Breadcrumb -->
 		<ul class="breadCrumbs">
 			<li><a href="#">Home</a></li>
@@ -79,7 +92,10 @@
 			<h6>Heading 6 Consect etuer adipisci ngon.</h6>
 		</hgroup>
 		
-		<p>Lorem ipsum dolor sit <em>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</em> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non <abbr title="Cascading Style Sheet">CSS</abbr>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+		<p>Lorem ipsum dolor sit <em>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</em> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <strong>strong</strong> <del>deleted</del> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+		<p><dfn id="Css"><abbr title="Cascading Style Sheet">CSS</abbr></dfn> is a style sheet language used to describe the presentation semantics (the look and formatting) of a document written in a markup language. Its most common application is to style web pages written in HTML and XHTML, but the language can also be applied to any kind of XML document, including SVG and XUL.</p>	
+		
+		<p>Linking back to the definition <a href="#Css"><abbr title="Cascading Style Sheet">CSS</abbr></a></p>
 		
 		<blockquote cite="http://www.mycom.com/tolkien/twotowers.html">
 			<p>They went in single file, running like hounds on a strong scent,	and an eager light was in their eyes. Nearly due west the broad swath of the marching Orcs tramped its ugly slot; the sweet grass of Rohan had been bruised and blackened as they passed.</p>
@@ -132,9 +148,9 @@
 		</ol>
 		<!-- / Pagination -->
 		
-		<h2>Blog Listing</h2>
 		
 		<section>
+			<h2>Blog Listing</h2>
 			<article>
 				<header>
 				<h2><a href="#">Come to my party on <time datetime="2010-03-01">1 March</time></a></h2>
@@ -143,6 +159,160 @@
 				<p>Published on <time datetime="2010-01-20" pubdate>20 January 2010</time> in the Sexysocks category.</p>
 				
 			</article>
+			<article>
+				<header>
+				<h2><a href="#">Come to my party on <time datetime="2010-03-01">1 March</time></a></h2>
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Published on <time datetime="2010-01-20" pubdate>20 January 2010</time> in the Sexysocks category.</p>
+				
+			</article>
+		</section>
+		
+		<section>
+			<h2>Code/ Pre</h2>
+			
+			<pre>&lt;pre&gt;
+			pre  space1
+			pre  space1
+			pre    space2
+			pre    space2
+			pre	tab
+			pre	tab</pre>
+
+			<code>&lt;code&gt;
+			Not indented
+				indent1
+				indent1
+					indent2
+						indent3</code>
+
+			 <tt>&lt;tt&gt;
+		      This tt text should be monospaced
+		        and 
+		        wrap as if 
+		          one line of text
+		            even though the code has newlines, spaces, and tabs. 
+		      It should be the same size as &lt;p&gt; text.
+		      </tt>
+
+			
+		</section>
+		
+		<section>
+			<h2>Tables</h2>
+			
+			<table summary="Table Summary here">
+				<caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
+				<thead>
+					<th>Table Header One</th>
+					<th>Table Header Two</th>
+				</thead>
+				<tfoot>
+					<td>Table Header One</td>
+					<td>Table Header One</td>
+				</tfoot>
+				
+				<tbody>
+					<tr>
+						<td>TD One</td>
+						<td>TD One</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		
+		<section>
+			<h2>Microformatted Address</h2>
+			<div class="vcard">
+			  <a class="fn org url" href="http://www.commerce.net/">CommerceNet</a>
+			  <div class="adr">
+			    <span class="type">Work</span>:
+			    <div class="street-address">169 University Avenue</div>
+			    <span class="locality">Palo Alto</span>,  
+			    <abbr class="region" title="California">CA</abbr>&nbsp;&nbsp;
+			    <span class="postal-code">94301</span>
+			    <div class="country-name">USA</div>
+			  </div>
+			  <div class="tel">
+			   <span class="type">Work</span> +1-650-289-4040
+			  </div>
+			  <div class="tel">
+			    <span class="type">Fax</span> +1-650-289-4041
+			  </div>
+			  <div>Email: 
+			   <span class="email">info@commerce.net</span>
+			  </div>
+			</div>
+		</section>
+		
+		<section>
+			<h2>Forms</h2>
+			
+			<form id="dummy" action="" method="post">
+		      	<fieldset>
+		      		<legend>Simple sample form</legend>
+		      		<p>
+						<label for="dummy0">Text input (title)</label>
+						<input type="text" class="title" name="dummy0" id="dummy0" value="Field with class .title">
+					</p>
+		          	<p>
+						<label for="dummy1">Another field</label>
+		      		  	<input type="text" class="text" id="dummy1" name="dummy1" value="Field with class .text">
+					</p>
+					<p>
+						<label for="dummy2">Textarea</label>
+						<textarea name="dummy2" id="dummy2" rows="5" cols="20"></textarea>
+					</p>
+					<p>
+						<input type="submit" value="Submit">
+		      		  	<input type="reset" value="Reset">
+					</p>
+		      	</fieldset>
+				<fieldset>
+			        <legend>Select, checkboxes, lists</legend>
+
+			    		<p><label for="dummy3">Select field</label>
+
+			    		  <select id="dummy3" name="dummy3">
+			    			  <option value="1">Ottawa</option>
+			    			  <option value="2">Calgary</option>
+			    			  <option value="3">Moosejaw</option>
+			    		  </select></p>
+
+			    		<p><label for="dummy4">Select with groups</label>
+
+			    		  <select id="dummy4" name="dummy4">
+			    			  <option>Favorite pet</option>
+			    			  <optgroup label="mammals">
+			    			    <option>dog</option>
+			    			    <option>cat</option>
+			    			    <option>rabbit</option>
+			    			    <option>horse</option>
+
+			    			  </optgroup>
+			    			  <optgroup label="reptiles">
+			    			    <option>iguana</option>
+			    			    <option>snake</option>
+			    			  </optgroup>
+			    		  </select></p>
+
+			    		  <p>
+			    		    <input type="radio" name="example" id="example1" /> <label for="example1">Radio one</label>
+			    		    <input type="radio" name="example" id="example2" /> <label for="example2">Radio two</label>
+			    		    <input type="radio" name="example" id="example3" /> <label for="example3">Radio three</label>
+						</p>
+
+			    		<p>
+			    		    <input type="checkbox" id="checkbox1"> <label for="checkbox1">Check one</label>
+							<input type="checkbox" id="checkbox2"> <label for="checkbox2">Check two</label>
+							<input type="checkbox" id="checkbox3"> <label for="checkbox3">Check three</label>
+
+			      </fieldset>
+			
+		
+		      </form>
+			
 		</section>
 		
 	</div>

@@ -4,6 +4,12 @@
 
 /* @end */
 
+/* @group Body */
+
+body{background:#fff;}
+
+/* @end */
+
 /* @group Wrapper */
 
 .wrapper{width:960px; margin:0 auto; font-size:12px; line-height:1.4;}
@@ -12,7 +18,7 @@
 
 /* @group Hgroup  */
 
-h1, h2, h3, h4, h5, h6, p, pre, dl, ul, ol, legend, address, table, blockquote{margin:0 0 20px 0;}
+h1, h2, h3, h4, h5, h6, p, pre, dl, ul, ol, legend, address, table, blockquote, section{margin:0 0 20px 0;}
 
 	h1{font-size:24px;}
 	h2{font-size:20px;}
@@ -64,5 +70,17 @@ a:link, a:active, a:visited{color:#0066CC;}
 
 .breadCrumbs li{display:inline; list-style:none; margin:0 10px 10px 0;}
 	.breadCrumbs li.active a{color:#000;}
+
+/* @end */
+
+/* @group Navigation */
+
+nav li{list-style:none; display:inline; margin:0 10px 10px 0;}
+
+/* @end */
+
+/* @group Table */
+
+table th, table td{padding:5px;}
 
 /* @end */
