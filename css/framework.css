@@ -1,0 +1,68 @@
+/* @group Accessibility Navigation - Used only when css is disabled */
+
+.screenOnly{display:none;}
+
+/* @end */
+
+/* @group Wrapper */
+
+.wrapper{width:960px; margin:0 auto; font-size:12px; line-height:1.4;}
+
+/* @end */
+
+/* @group Hgroup  */
+
+h1, h2, h3, h4, h5, h6, p, pre, dl, ul, ol, legend, address, table, blockquote{margin:0 0 20px 0;}
+
+	h1{font-size:24px;}
+	h2{font-size:20px;}
+	h3{font-size:18px;}
+	h4{font-size:16px;}
+	h5{font-size:14px;}
+	h6{font-size:12px;}
+
+/* @end */
+
+/* @group Blockquote */
+
+blockquote, q, em, cite, dfn, i, cite, var, address {
+  font-style: italic;
+}
+
+blockquote{padding:10px; background:#ccc; font-size:14px;}
+	blockquote q{quotes:none;}
+
+/* @end */
+
+/* @group Unordered Lists */
+
+ul li, ol li{margin:0 0 10px 15px;}
+
+/* @end */
+
+/* @group Definition List */
+
+dl dt{margin:10px 0 0;}
+
+/* @end */
+
+/* @group Link group */
+
+a:link, a:active, a:visited{color:#0066CC;}
+	a:hover{color:#000;}
+
+/* @end */
+
+/* @group Pagination */
+
+.pagination li{display:inline; list-style:none; margin:0 10px 10px 0;}
+	.pagination li.disabled a{color:#ccc;}
+
+/* @end */
+
+/* @group Breadcrumbs */
+
+.breadCrumbs li{display:inline; list-style:none; margin:0 10px 10px 0;}
+	.breadCrumbs li.active a{color:#000;}
+
+/* @end */

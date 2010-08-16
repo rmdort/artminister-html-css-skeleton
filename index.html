@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+
+  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+  <!--[if IE]><![endif]-->
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+  <title>Artminister CSS Framework</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--  Mobile Viewport Fix
+        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+  device-width : Occupy full width of the screen in its current orientation
+  initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+  -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <link rel="stylesheet" href="css/framework.css?v=1">
+
+  <!-- For the less-enabled mobile browsers like Opera Mini -->
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
+
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/modernizr-1.5.min.js"></script>
+
+</head>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+  
+	<!-- Accessibility -->
+	<ul class="screenOnly offScreen"> 
+	    <li><a href="#Content">Jump to Content</a></li>
+		<li><a href="#Nav">Jump to Menu</a></li>
+	</ul>
+	<!-- / Accessibility -->
+	
+	<!-- Wrapper -->
+	<div class="wrapper">
+		
+		<!-- Breadcrumb -->
+		<ul class="breadCrumbs">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Section name</a></li>
+			<li class="active"><a href="#">Page name</a></li>
+		</ul>
+		<!-- / Breadcrumb -->
+		
+		<hr>
+		
+		<hgroup>
+			<h1>Heading 1 Consect etuer adipisci ngon.</h1>
+			<h2>Heading 2 Consect etuer adipisci ngon.</h2>
+			<h3>Heading 3 Consect etuer adipisci ngon.</h3>
+			<h4>Heading 4 Consect etuer adipisci ngon.</h4>
+			<h5>Heading 5 Consect etuer adipisci ngon.</h5>
+			<h6>Heading 6 Consect etuer adipisci ngon.</h6>
+		</hgroup>
+		
+		<p>Lorem ipsum dolor sit <em>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</em> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non <abbr title="Cascading Style Sheet">CSS</abbr>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+		
+		<blockquote cite="http://www.mycom.com/tolkien/twotowers.html">
+			<p>They went in single file, running like hounds on a strong scent,	and an eager light was in their eyes. Nearly due west the broad swath of the marching Orcs tramped its ugly slot; the sweet grass of Rohan had been bruised and blackened as they passed.</p>
+		</blockquote>
+		
+		<ul>
+			<li>An unordered list</li>
+			<li>An unordered list</li>
+			<li>An unordered list</li>
+			<li>An unordered list</li>
+			<li>An unordered list</li>
+			<li>An unordered list</li>
+		</ul>
+		
+		<ol>
+			<li>An ordered list</li>
+			<li>An ordered list</li>
+			<li>An ordered list</li>
+			<li>An ordered list</li>
+			<li>An ordered list</li>
+			<li>An ordered list</li>
+		</ol>
+		
+		<dl>
+			<dt>A definition list - and this is the dt</dt>
+			<dd>A definition list - and this is the dd, A definition list - and this is the dd, A definition list - and this is the dd, A definition list - and this is the dd, A definition list - and this is the dd, </dd>
+			
+			<dt>A definition list - and this is the dt</dt>
+			<dd>A definition list - and this is the dd, A definition list - and this is the dd, A definition list - and this is the dd, A definition list - and this is the dd, A definition list - and this is the dd, </dd>
+			
+			<dt>A definition list - and this is the dt</dt>
+			<dd>A definition list - and this is the dd, A definition list - and this is the dd, A definition list - and this is the dd, A definition list - and this is the dd, A definition list - and this is the dd, </dd>
+		</dl>
+		
+		
+		<p>Lorem ipsum dolor sit <em>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</em> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p><a href="#">Read more</a></p>
+		
+		<!-- Pagination -->
+		<ol class="pagination">
+			<li class="prev disabled"><a href="#">Previous</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li class="active"><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">7</a></li>
+			<li class="next"><a href="#">Next</a></li>
+		</ol>
+		<!-- / Pagination -->
+		
+		<h2>Blog Listing</h2>
+		
+		<section>
+			<article>
+				<header>
+				<h2><a href="#">Come to my party on <time datetime="2010-03-01">1 March</time></a></h2>
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Published on <time datetime="2010-01-20" pubdate>20 January 2010</time> in the Sexysocks category.</p>
+				
+			</article>
+		</section>
+		
+	</div>
+	<!-- / Wrapper -->
+
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+
+
+  <script src="js/plugins.js?v=1"></script>
+  <script src="js/script.js?v=1"></script>
+
+  <!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js?v=1"></script>
+  <![endif]-->
+
+
+  <!-- yui profiler and profileviewer - remove for production -->
+  <script src="js/profiling/yahoo-profiling.min.js?v=1"></script>
+  <script src="js/profiling/config.js?v=1"></script>
+  <!-- end profiling code -->
+
+
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+  <script>
+   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
+</body>
+</html>
