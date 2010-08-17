@@ -31,10 +31,6 @@ h1, h2, h3, h4, h5, h6, p, pre, dl, ul, ol, legend, address, table, blockquote, 
 
 /* @group Blockquote */
 
-blockquote, q, em, cite, dfn, i, cite, var, address {
-  font-style: italic;
-}
-
 blockquote{padding:10px; background:#ccc; font-size:14px;}
 	blockquote q{quotes:none;}
 
@@ -42,8 +38,8 @@ blockquote{padding:10px; background:#ccc; font-size:14px;}
 
 /* @group Lists */
 
-ul li, ol li{margin:0 0 10px 30px;}
 ul ul, ol ol{margin:10px 0 0 0;}
+	ul li, ol li{margin:0 0 10px 30px;}
 
 /* @end */
 
@@ -53,7 +49,7 @@ dl dt{margin:10px 0 0;}
 
 /* @end */
 
-/* @group Link group */
+/* @group Links */
 
 a:link, a:active, a:visited{color:#0066CC;}
 	a:hover{color:#000;}

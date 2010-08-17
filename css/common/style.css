@@ -63,6 +63,8 @@ input, select { vertical-align:middle; }
 
 img{vertical-align:bottom;} /* Remove bottom spacing in image links */
 
+blockquote, q, em, cite, dfn, i, cite, var, address {  font-style: italic; } /* Remove certain elements as needed */
+
 /* END RESET CSS */
 
 
