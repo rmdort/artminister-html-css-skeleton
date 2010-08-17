@@ -60,13 +60,13 @@ table { border-collapse:collapse; border-spacing:0; }
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
 
 input, select { vertical-align:middle; }
+
+img{vertical-align:bottom;} /* Remove bottom spacing in image links */
+
 /* END RESET CSS */
 
 
 /*
-fonts.css from the YUI Library: developer.yahoo.com/yui/
-          Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
-
 There are two custom edits:
  * make the line-height relative and unit-less
  * remove the pre,code styles as we use a recommendation from Eric Meyer instead
@@ -182,26 +182,11 @@ button {  width: auto; overflow: visible; }
 .invisible { visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX << */
+
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 .clearfix { display: inline-block; }
 * html .clearfix { height: 1%; } /* Hides from IE-mac \*/
 .clearfix { display: block; }
-
-
-
-
-
- /* Primary Styles
-    Author: 
- */
-
-
-
-
-
-
-
-
 
 
 
