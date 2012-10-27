@@ -63,7 +63,7 @@ img, object, embed { max-width: 100%; height: auto; }
 
 /* Mobile */
 
-@media handheld, only screen and (max-width: 767px) {
+@include respond-to(mobile) {
 	
 	.row {
 		width: 100%;

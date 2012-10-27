@@ -111,6 +111,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass
   compass-normalize
   compass-recipes
   middleman (~> 3.0.5)

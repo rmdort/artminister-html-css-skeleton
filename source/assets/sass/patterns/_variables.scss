@@ -13,8 +13,9 @@ $ratio: golden();
 $base-color: #333;
 $base-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $base-font-size: 13px;
+$base-font-size-em: $base-font-size/16px * 1em;
 $base-line-height: 1.4; 
-$base-margin: 15px;
+$base-margin: 1.5em;
 
   // Headers
   
@@ -23,7 +24,7 @@ $base-margin: 15px;
   // Modular Scale
 
   $max-font-size:40px;
-  $base-size: $base-font-size $max-font-size;
+  $base-size: 1em $max-font-size/$base-font-size * 1em; // For Modular Scale
   
   // Links
   
