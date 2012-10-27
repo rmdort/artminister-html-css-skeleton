@@ -1,0 +1,149 @@
+---
+title: Forms
+---
+
+<h2><%= data.page.title %></h2>
+
+
+
+<h3>Verical Form</h3>
+
+<form>
+  <dl class="form">
+    <dt><label>This is a label.</label></dt>
+    <dd>
+      <input type="text" placeholder="Standard Input" class="twelve">
+    </dd>
+    <dd>
+      <label>Select an Item from the List</label>
+      <select>
+        <option>Select a Value</option>
+      </select>
+    </dd>
+    
+    <dt><label>Address</label></dt>
+    <dd>
+      <input type="text" class="twelve" placeholder="Street" >
+      <div class="row">
+        <div class="six columns">
+          <input type="text" placeholder="City" >
+        </div>
+        <div class="three columns">
+          <input type="text" placeholder="State" >
+        </div>
+        <div class="three columns">
+          <input type="text" placeholder="ZIP" >
+        </div>
+      </div>
+      <textarea placeholder="Message"></textarea>  
+    </dd>
+    
+    <dt><label>Select your choice</label></dt>
+    <dd>
+      <label><input type="checkbox" id=""> Option 1</label>
+      <label><input type="checkbox" id=""> Option 2</label>
+      
+      <label><input type="radio" name="name"> Option 3</label>
+      <label><input type="radio" name="name"> Option 4</label>
+    </dd>
+    
+  </dl>
+  
+  <fieldset>
+
+    <legend>Fieldset Name</legend>
+
+    <dl class="form">
+      <dt><label>This is a label.</label></dt>
+      <dd>
+        <input type="text" placeholder="Standard Input" class="twelve">
+      </dd>
+
+      <dt><label>Address</label></dt>
+      <dd>
+        <input type="text" class="twelve" placeholder="Street" >
+        <div class="row">
+          <div class="six columns">
+            <input type="text" placeholder="City" >
+          </div>
+          <div class="three columns">
+            <input type="text" placeholder="State" >
+          </div>
+          <div class="three columns">
+            <input type="text" placeholder="Disabled ZIP" disabled>
+          </div>
+        </div>
+        <textarea placeholder="Disabled Message" disabled></textarea>  
+      </dd>
+
+    </dl>
+
+  </fieldset>
+  
+</form>
+
+
+<h3>Horizontal Form</h3>
+
+<form>
+  <dl class="form row">
+    <dt class="columns three"><label>This is a label.</label></dt>
+    <dd class="columns nine">
+      <input type="text" placeholder="Standard Input" class="twelve">
+    </dd>
+  </dl>
+  
+  <dl class="row">  
+    <dt class="columns three"><label>Address</label></dt>
+    <dd class="columns nine">
+      <input type="text" class="twelve" placeholder="Street" >
+      <div class="row">
+        <div class="six columns">
+          <input type="text" placeholder="City" >
+        </div>
+        <div class="three columns">
+          <input type="text" placeholder="State" >
+        </div>
+        <div class="three columns">
+          <input type="text" placeholder="ZIP" >
+        </div>
+      </div>
+      <textarea placeholder="Message"></textarea>  
+    </dd>
+  </dl>
+  
+</form>
+
+
+
+<h3>Error Messages</h3>
+
+
+<form>
+  <dl class="form">
+    <dt><label>This is a label.</label></dt>
+    <dd>
+      <input type="text" placeholder="Standard Input" class="twelve error">
+      <label class="error">This field is required</label>
+    </dd>
+    
+    <dt><label>Address</label></dt>
+    <dd>
+      <input type="text" class="twelve" placeholder="Street" >
+      <div class="row">
+        <div class="six columns">
+          <input type="text" placeholder="City" >
+        </div>
+        <div class="three columns">
+          <input type="text" placeholder="State" class="error">
+          <label class="error">State is required</label>
+        </div>
+        <div class="three columns">
+          <input type="text" placeholder="ZIP" >
+        </div>
+      </div>
+      <textarea placeholder="Message"></textarea>  
+    </dd>
+    
+  </dl>
+</form>

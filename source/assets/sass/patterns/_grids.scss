@@ -1,0 +1,82 @@
+@mixin generateColumnWidth ($i){
+	width: 1% * $column-width * $i;		
+}
+
+@mixin generateBoxSizing(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*behavior: url(css/boxsizing.htc)
+}
+
+.row { 	
+	max-width: $site-width; 
+	min-width: $min-site-width; 
+	width: $max-site-width; 
+	margin: 0 auto; 	
+	@include generateBoxSizing;
+}
+
+/* Nested Rows */
+
+.row .row { 
+	width: auto; 
+	max-width: none; 
+	min-width: 0; 
+	margin: 0  (-$column-spacing); 
+}
+
+.row:before, .row:after { 
+	content: ""; 
+	display: table; 
+	clear: both;
+}
+
+/* IE 6 & 7 */
+
+.row { *zoom: 1; }
+
+.row-pad{
+	padding-bottom:$column-spacing;
+}
+
+/* Columns */
+
+.columns { 
+	float: left; 
+	min-height: 1px; 
+	padding:0 $column-spacing; 
+	position: relative; 
+	@include generateBoxSizing;	
+}
+
+@for $i from 1 through 12{
+  .#{convert-number-to-word($i)}, .row .#{convert-number-to-word($i)}{
+    @include generateColumnWidth($i);
+  }
+}
+
+
+/* Content */
+
+img, object, embed { max-width: 100%; height: auto; }
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+	
+	.row {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0;
+		margin-right: 0;		
+	}
+	
+	.columns, .row .columns {
+		width: auto;
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		padding-bottom:$column-spacing;		
+	}
+}

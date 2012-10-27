@@ -1,0 +1,37 @@
+/* Headings */
+
+h1, h2, h3, h4, h5, h6{
+  margin:0 0 ms(1) 0;
+  font-family: $base-font-family;
+  font-weight: $header-font-weight;
+}
+
+h6{
+  font-size: ms(0, $base-size, $ratio);
+}
+
+h5{
+  font-size: ms(1, $base-size, $ratio);
+}
+
+h4{
+  font-size: ms(2, $base-size, $ratio);
+}
+
+h3{
+  font-size: ms(3, $base-size, $ratio);
+}
+
+h2{
+  font-size: ms(4, $base-size, $ratio);
+}
+
+h1{
+  font-size: ms(5, $base-size, $ratio);
+}
+
+/* Paragraph */
+
+p{
+  margin:0 0 ms(1) 0;
+}

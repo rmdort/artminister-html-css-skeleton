@@ -1,7 +1,0 @@
-Design Source Files
-Browser Compatibility Requirements
-Server Requirements
-
-
-Favicon
-Apple Touch Icon

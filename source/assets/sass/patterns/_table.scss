@@ -1,0 +1,23 @@
+table{
+  width:100%;
+  text-align:left;
+  margin:0 0 $base-margin 0;    
+} 
+
+td, th{
+  padding:$table-padding;
+}
+
+tbody td, thead th, tbody th{
+  border-bottom:1px $table-cell-border-color solid;
+}
+
+tr:hover td, tr:hover tbody > th{
+  background-color:$table-hover-color;
+}
+
+// Zebra 
+
+tbody tr:nth-child(odd){
+  background:$table-zebra-color;
+}

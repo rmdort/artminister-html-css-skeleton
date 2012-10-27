@@ -1,0 +1,63 @@
+// Grid Settings
+
+$columns: 12; /* 12 Column Grid */
+$column-width: (100/$columns); /* Column Width Percentage */
+$site-width: 960px;
+$min-site-width: 768px; 
+$max-site-width: 100%; 
+$column-spacing: 10px;
+
+// Typography
+
+$ratio: golden();
+$base-color: #333;
+$base-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$base-font-size: 13px;
+$base-line-height: 1.4; 
+$base-margin: 15px;
+
+  // Headers
+  
+  $header-font-weight: bold;
+
+  // Modular Scale
+
+  $max-font-size:40px;
+  $base-size: $base-font-size $max-font-size;
+  
+  // Links
+  
+  $link-color: #2BA6CB;
+  $link-hover-color: adjust_lightness($link-color, -20%);
+  $link-active-color: $link-color;
+  $link-visited-color: $link-color;
+  $link-focus-color: $link-color;
+  $underline-on-hover: false;
+  
+
+// Forms
+
+$input-border-color: #ccc;
+$input-focus-border-color: #999;
+$input-color: adjust-lightness($base-color, 5%);
+$input-placeholder-color: adjust-lightness($base-color, 40%);
+$input-shadow-color: rgba(0, 0, 0, 0.1);
+$input-border-radius: 2px;
+$input-padding: 5px;
+$form-margin:12px; // Bottom Margin for input, textarea and select elements
+$bool-add-input-shadow: true;
+
+  // Error
+  
+  $error-message-color: #B94A48;
+  
+// Table
+
+$table-padding: 8px 10px;
+$table-cell-border-color: #ddd;
+$table-hover-color: #feffc2;
+$table-zebra-color: #f9f9f9;
+
+
+// Buttons
+

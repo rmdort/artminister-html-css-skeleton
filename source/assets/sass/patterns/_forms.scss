@@ -1,0 +1,97 @@
+// Form 
+
+form{
+  margin:0 0 ms(1) 0;
+}
+
+// Input and Textarea
+
+input[type="text"], 
+textarea, 
+input[type="password"]
+{  
+  width:100%;
+  padding: $input-padding;  
+  border:1px $input-border-color solid;
+  margin:0 0 $form-margin 0;
+  color: $input-color;
+  
+  @if $bool-add-input-shadow {
+    @include box-shadow($input-shadow-color 0 1px 2px inset);
+  }
+  @include generateBoxSizing;
+  @include border-radius($input-border-radius);  
+  
+  &:focus{
+    border-color:$input-focus-border-color;
+  }
+}
+
+select{
+  margin:0 0 $form-margin 0;
+}
+
+label{
+  padding:0 0 5px 0;
+  display:block;
+  vertical-align:top;
+}
+
+
+// Definition List 
+
+.form{
+  padding-bottom:5px;
+  dd{ padding-bottom:5px;}
+}
+
+// Field Set 
+
+fieldset{
+  padding:$form-margin;
+  padding-bottom:0;
+  margin:0 0 $form-margin 0;
+  border:1px #ccc solid;
+  @include border-radius;
+  
+  dl:last-child{
+    padding:0;
+  }
+}
+
+legend{
+  padding:0 $form-margin;
+}
+
+// Error Messages
+
+input.error, textarea.error{
+  border-color:$error-message-color;
+}
+label.error{
+  color:$error-message-color;
+  margin: (-$form-margin+5) 0 10px 0;
+  font-size:ms(0);
+}
+
+
+// Placeholder
+
+input, textarea{
+  
+  &::-webkit-input-placeholder {
+    color: $input-placeholder-color;
+  }
+  
+  &:-moz-placeholder {
+    color: $input-placeholder-color;
+  }
+  
+  &:-ms-input-placeholder {
+    color: $input-placeholder-color;
+  }  
+  
+  &:input-placeholder{
+    color: $input-placeholder-color;
+  }
+}

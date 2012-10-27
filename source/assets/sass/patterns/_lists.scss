@@ -1,0 +1,34 @@
+ul, ol { 
+  padding:0; 
+  margin:0 0 $base-margin 2em; 
+}
+
+li { 
+  margin-bottom: $base-margin/2; 
+}
+
+ul ul, ol ol { 
+  margin: $base-margin 0 $base-margin 1em; 
+}
+
+.list-inline{
+  margin-left:0;
+  li{display:inline; margin-right:$base-margin/2;}
+}
+
+// Definition List
+
+dl{
+  margin:0; 
+  padding:0 0 $base-margin 0;
+}
+
+dt{ 
+  margin:0; 
+  padding:0;
+}
+
+dd{ 
+  margin:0; 
+  padding:0 0 $base-margin 0;
+}
