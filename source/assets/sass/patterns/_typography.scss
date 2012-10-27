@@ -13,29 +13,49 @@ p{
   }
 }
 
-h6{
-  font-size: ms(0, $base-size, $ratio);
-}
-
-h5{
-  font-size: ms(1, $base-size, $ratio);
-}
-
-h4{
-  font-size: ms(2, $base-size, $ratio);
-}
-
-h3{
-  font-size: ms(3, $base-size, $ratio);
+h1{
+  font-size: ms(5, $base-size, $ratio);
+  @if $h1-color {
+    color: $h1-color;
+  }
 }
 
 h2{
   font-size: ms(4, $base-size, $ratio);
+  @if $h2-color {
+    color: $h2-color;
+  }
 }
 
-h1{
-  font-size: ms(5, $base-size, $ratio);
+h3{
+  font-size: ms(3, $base-size, $ratio);
+  @if $h3-color {
+    color: $h3-color;
+  }
 }
+
+h4{
+  font-size: ms(2, $base-size, $ratio);
+  @if $h4-color {
+    color: $h4-color;
+  }
+}
+
+h5{
+  font-size: ms(1, $base-size, $ratio);
+  @if $h5-color {
+    color: $h5-color;
+  }
+}
+
+h6{
+  font-size: ms(0, $base-size, $ratio);
+  @if $h6-color {
+    color: $h6-color;
+  }
+}
+
+
 
 /* Paragraph */
 

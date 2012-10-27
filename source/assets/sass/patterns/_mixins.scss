@@ -2,9 +2,9 @@
 
 @mixin hover-link {
   text-decoration: none;
-  &:hover {    
-    text-decoration: if($underline-on-hover, underline, none ); 
-  } 
+  &:hover {
+    text-decoration: if($underline-on-hover, underline, none );
+  }
 }
 
 // Convert Numbers to Work
@@ -25,7 +25,7 @@
 }
 
 // Media Queries Mixin
-// @include respond-to(mobile) || @include respond-to(tablet) || @include respond-to(mobile-wide) 
+// @include respond-to(mobile) || @include respond-to(tablet) || @include respond-to(mobile-wide)
 
 @mixin respond-to($media) {
   @if $media == mobile {
@@ -37,4 +37,10 @@
   @else if $media == mobile-wide {
     @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
   }
+}
+
+@mixin ms-font-size($s){
+
+
+
 }

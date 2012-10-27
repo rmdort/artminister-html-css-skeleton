@@ -6,9 +6,17 @@
 # First: gem install susy --pre
 # require 'susy'
 
+require 'compass-normalize'
+require 'modular-scale'
+require 'compass-recipes'
+
 # Change Compass configuration
 compass_config do |config|
  config.output_style = :compact
+ config.css_dir = "source/assets/css"
+ config.sass_dir = "source/assets/sass"
+ config.images_dir = "assets/img"
+ config.javascripts_dir = "assets/js"
 end
 
 ###
@@ -47,23 +55,11 @@ end
 #   end
 # end
 
-require 'compass-normalize'
-require 'modular-scale'
-require 'compass-recipes'
-
-
-http_path = "/"
-css_dir = "assets/css"
-sass_dir = "assets/sass"
-images_dir = "assets/img"
-javascripts_dir = "assets/js"
 
 page "/assets/sass/main.css", :layout => false
 
 set :css_dir, 'assets/css'
-
 set :js_dir, 'assets/js'
-
 set :images_dir, 'assets/img'
 
 # Build-specific configuration

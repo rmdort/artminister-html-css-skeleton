@@ -2,6 +2,7 @@ html{
   font: $base-font-size-em/#{$base-line-height} $base-font-family;
   color: $base-color;
   overflow-y:scroll;
+  background: if($body-background, $body-background, #fff );
 }
 
 body{

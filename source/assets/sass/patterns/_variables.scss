@@ -3,9 +3,13 @@
 $columns: 12; /* 12 Column Grid */
 $column-width: (100/$columns); /* Column Width Percentage */
 $site-width: 960px;
-$min-site-width: 768px; 
-$max-site-width: 100%; 
+$min-site-width: 768px;
+$max-site-width: 100%;
 $column-spacing: 10px;
+
+// Layout
+
+$body-background: #fff;
 
 // Typography
 
@@ -14,27 +18,34 @@ $base-color: #333;
 $base-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $base-font-size: 13px;
 $base-font-size-em: $base-font-size/16px * 1em;
-$base-line-height: 1.4; 
+$base-line-height: 1.4;
 $base-margin: 1.5em;
 
   // Headers
-  
+
+  $h1-color: $base-color;
+  $h2-color: $base-color;
+  $h3-color: $base-color;
+  $h4-color: $base-color;
+  $h5-color: $base-color;
+  $h6-color: $base-color;
+
   $header-font-weight: bold;
 
   // Modular Scale
 
   $max-font-size:40px;
   $base-size: 1em $max-font-size/$base-font-size * 1em; // For Modular Scale
-  
+
   // Links
-  
+
   $link-color: #2BA6CB;
   $link-hover-color: adjust_lightness($link-color, -20%);
   $link-active-color: $link-color;
   $link-visited-color: $link-color;
   $link-focus-color: $link-color;
   $underline-on-hover: false;
-  
+
 
 // Forms
 
@@ -49,9 +60,9 @@ $form-margin:12px; // Bottom Margin for input, textarea and select elements
 $bool-add-input-shadow: true;
 
   // Error
-  
+
   $error-message-color: #B94A48;
-  
+
 // Table
 
 $table-padding: 8px 10px;
