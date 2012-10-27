@@ -1,9 +1,13 @@
+// Hover Link Mixin
+
 @mixin hover-link {
   text-decoration: none;
   &:hover {    
     text-decoration: if($underline-on-hover, underline, none ); 
   } 
 }
+
+// Convert Numbers to Work
 
 @function convert-number-to-word($num) {
   $count:1;
@@ -14,4 +18,23 @@
   @return "invalid";
 }
 
+// Convert Pixel to Em
 
+@function calc-em($target-px, $context) {
+  @return ($target-px / $context) * 1em;
+}
+
+// Media Queries Mixin
+// @include respond-to(mobile) || @include respond-to(tablet) || @include respond-to(mobile-wide) 
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: 768px) and (max-width: $site-width) { @content; }
+  }
+  @else if $media == mobile-wide {
+    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+  }
+}

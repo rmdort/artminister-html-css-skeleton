@@ -1,5 +1,9 @@
 html{
-  font: $base-font-size/#{$base-line-height} $base-font-family;
+  font: $base-font-size-em/#{$base-line-height} $base-font-family;
   color: $base-color;
   overflow-y:scroll;
+}
+
+body{
+	font-size: 100%;
 }
