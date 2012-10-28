@@ -37,10 +37,21 @@
   @else if $media == mobile-wide {
     @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
   }
+  @else if $media == print {
+    @media print { @content; }
+  }
 }
 
-@mixin ms-font-size($s){
+// Grid Calculation for Percentages
 
+@function gridCalc($colNumber, $columns) {
+  @return percentage(($colNumber / $columns));
+}
 
+@mixin content-hide{
+  display: none !important;
+}
 
+@mixin content-show{
+  display: inherit !important;
 }

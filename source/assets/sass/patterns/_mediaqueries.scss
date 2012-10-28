@@ -1,0 +1,17 @@
+/* Targetted Display */
+
+@each $device in mobile, mobile-wide, tablet, print{
+  .show-for-#{$device}{
+    @include content-hide;
+    @include respond-to($device){
+      @include content-show;
+    }
+  }
+
+  .hide-for-#{$device}{
+    @include content-show;
+    @include respond-to($device){
+      @include content-hide;
+    }
+  }
+}

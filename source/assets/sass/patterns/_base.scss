@@ -8,3 +8,13 @@ html{
 body{
 	font-size: 100%;
 }
+
+.push-right{
+	float: right;
+	margin: 0 0 $base-margin $base-margin;
+}
+
+.push-left{
+	float: left;
+	margin: 0 $base-margin $base-margin 0;
+}

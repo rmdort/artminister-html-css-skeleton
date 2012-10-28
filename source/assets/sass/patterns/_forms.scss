@@ -1,4 +1,4 @@
-// Form 
+// Form
 
 form{
   margin:0 0 ms(1) 0;
@@ -6,22 +6,22 @@ form{
 
 // Input and Textarea
 
-input[type="text"], 
-textarea, 
+input[type="text"],
+textarea,
 input[type="password"]
-{  
+{
   width:100%;
-  padding: $input-padding;  
+  padding: $input-padding;
   border:1px $input-border-color solid;
   margin:0 0 $form-margin 0;
   color: $input-color;
-  
-  @if $bool-add-input-shadow {
+
+  @if $add-input-shadow {
     @include box-shadow($input-shadow-color 0 1px 2px inset);
   }
-  @include generateBoxSizing;
-  @include border-radius($input-border-radius);  
-  
+  @include box-sizing(border-box);
+  @include border-radius($input-border-radius);
+
   &:focus{
     border-color:$input-focus-border-color;
   }
@@ -38,14 +38,14 @@ label{
 }
 
 
-// Definition List 
+// Definition List
 
 .form{
   padding-bottom:5px;
   dd{ padding-bottom:5px;}
 }
 
-// Field Set 
+// Field Set
 
 fieldset{
   padding:$form-margin;
@@ -53,7 +53,7 @@ fieldset{
   margin:0 0 $form-margin 0;
   border:1px #ccc solid;
   @include border-radius;
-  
+
   dl:last-child{
     padding:0;
   }
@@ -78,19 +78,19 @@ label.error{
 // Placeholder
 
 input, textarea{
-  
+
   &::-webkit-input-placeholder {
     color: $input-placeholder-color;
   }
-  
+
   &:-moz-placeholder {
     color: $input-placeholder-color;
   }
-  
+
   &:-ms-input-placeholder {
     color: $input-placeholder-color;
-  }  
-  
+  }
+
   &:input-placeholder{
     color: $input-placeholder-color;
   }

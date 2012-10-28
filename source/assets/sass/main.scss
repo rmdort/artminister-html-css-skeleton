@@ -31,3 +31,7 @@ $legacy-support-for-mozilla: false;
 // Site Specific
 
 @import "site/site";
+
+// Include Media Queries
+
+@import "patterns/mediaqueries";
