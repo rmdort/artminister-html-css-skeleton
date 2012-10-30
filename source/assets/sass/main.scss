@@ -14,6 +14,7 @@ $legacy-support-for-mozilla: false;
 @import "compass/typography";
 @import "recipes/ui/gradient";
 @import "recipes/ui/convex";
+@import "stitch";
 
 // Import Patterns
 
@@ -21,12 +22,15 @@ $legacy-support-for-mozilla: false;
 @import "patterns/mixins";
 
 @import "patterns/base";
+@import "patterns/fonts";
 @import "patterns/grids";
 @import "patterns/typography";
 @import "patterns/links";
 @import "patterns/table";
 @import "patterns/forms";
 @import "patterns/lists";
+@import "patterns/animation";
+@import "patterns/print";
 
 // Site Specific
 

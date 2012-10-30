@@ -9,6 +9,7 @@
 require 'compass-normalize'
 require 'modular-scale'
 require 'compass-recipes'
+require 'stitch'
 
 # Change Compass configuration
 compass_config do |config|

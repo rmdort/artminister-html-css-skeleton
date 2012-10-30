@@ -1,3 +1,32 @@
+// Clearfix
+
+%clearfix {
+  &:before,
+  &:after {
+      content:"";
+      display:table;
+  }
+  &:after {
+      clear:both;
+  }
+  zoom:1;
+}
+
+@mixin clear-floats {
+  @extend %stitch-clearfix;
+}
+
+// Clearfix
+
+@mixin clearfix {
+  @extend %clearfix;
+}
+
+//  Triggers hasLayout for IE7 and below. Fixes most IE issues
+@mixin has-layout {
+  *zoom:1;
+}
+
 // Hover Link Mixin
 
 @mixin hover-link {
@@ -31,11 +60,31 @@
   @if $media == mobile {
     @media only screen and (max-width: 767px) { @content; }
   }
-  @else if $media == tablet {
-    @media only screen and (min-width: 768px) and (max-width: $site-width) { @content; }
+  @else if $media == mobile-portrait {
+    @media only screen and (max-width : 320px) { @content; }
+  }
+  @else if $media == mobile-landscape {
+    @media only screen and (max-width : 480px) { @content; }
   }
   @else if $media == mobile-wide {
     @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) { @content; }
+  }
+  @else if $media == tablet-portrait {
+    @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait)  { @content;
+    }
+  }
+  @else if $media == tablet-landscape {
+    @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+      @content;
+    }
+  }
+  @else if $media == retina {
+    @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+      @content;
+    }
   }
   @else if $media == print {
     @media print { @content; }
@@ -48,10 +97,49 @@
   @return percentage(($colNumber / $columns));
 }
 
+// Hide Content
+
 @mixin content-hide{
   display: none !important;
 }
 
+// Inherit Display
+
 @mixin content-show{
   display: inherit !important;
+}
+
+
+// Font Face
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+
+    @if $asset-pipeline == true {
+      src: font-url('#{$file-path}.eot');
+      src: font-url('#{$file-path}.eot?#iefix')          format('embedded-opentype'),
+           font-url('#{$file-path}.woff')                format('woff'),
+           font-url('#{$file-path}.ttf')                 format('truetype'),
+           font-url('#{$file-path}.svg##{$font-family}') format('svg');
+    } @else {
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix')               format('embedded-opentype'),
+           url('#{$file-path}.woff')                     format('woff'),
+           url('#{$file-path}.ttf')                      format('truetype'),
+           url('#{$file-path}.svg##{$font-family}')      format('svg');
+    }
+  }
+}
+
+// Legacy support for inline-block in IE7 (maybe IE6)
+
+@mixin inline-block($position: baseline) {
+  display: inline-block;
+  vertical-align: $position;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
 }
