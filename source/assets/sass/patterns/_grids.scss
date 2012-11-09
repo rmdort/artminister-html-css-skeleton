@@ -1,9 +1,33 @@
+// Grid Calculation for Percentages
+
+@function gridCalc($colNumber, $columns) {
+  @return percentage(($colNumber / $columns));
+}
+
+@mixin generateBoxSizing(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*behavior: url(css/boxsizing.htc)
+}
+
+@function convert-number-to-word($num) {
+  $count:1;
+  @each $word in one,two,three,four,five,six,seven,eight,nine,ten,eleven,
+    twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen,
+    twenty,twentyone,twentytwo,twentythree,twentyfour{
+    @if ($count == $num) { @return $word; }
+    $count: $count + 1;
+  }
+  @return "invalid";
+}
+
 .row {
 	max-width: $site-width;
 	min-width: $min-site-width;
 	width: $max-site-width;
 	margin: 0 auto;
-	@include box-sizing(border-box);
+	@include generateBoxSizing;
 }
 
 /* Nested Rows */
@@ -12,7 +36,7 @@
 	width: auto;
 	max-width: none;
 	min-width: 0;
-	margin: 0  (-$column-spacing);
+	margin: 0  (-$column-spacing/2);
 }
 
 .row:before, .row:after {
@@ -26,7 +50,7 @@
 .row { *zoom: 1; }
 
 .row-pad{
-	padding-bottom:$column-spacing;
+	padding-bottom:$column-spacing/2;
 }
 
 /* Columns */
@@ -34,14 +58,9 @@
 .columns {
 	float: left;
 	min-height: 1px;
-	padding:0 $column-spacing;
+	padding:0 $column-spacing/2;
 	position: relative;
-	@include box-sizing(border-box);
-
-	&.centered{
-		float: none;
-		margin: 0 auto;
-	}
+	@include generateBoxSizing;
 }
 
 @for $i from 1 through $columns{
@@ -53,8 +72,8 @@
 // Creating .row .push-# classes
 
 @for $i from 2 through $columns - 2 {
-  .push-#{convert-number-to-word($i)} { left: gridCalc($i, $columns); }
-  .pull-#{convert-number-to-word($i)} { right: gridCalc($i, $columns); }
+  .push-#{convert-number-to-word($i)} { left: generateColumnWidth($i, $columns); }
+  .pull-#{convert-number-to-word($i)} { right: generateColumnWidth($i, $columns); }
 }
 
 /* Content */
@@ -63,13 +82,14 @@ img, object, embed { max-width: 100%; height: auto; }
 
 /* Mobile */
 
-@include respond-to(mobile) {
+@media handheld, only screen and (max-width: 767px) {
 
 	.row {
 		width: 100%;
 		min-width: 0;
 		margin-left: 0;
 		margin-right: 0;
+		padding-bottom: 0;
 	}
 
 	.columns, .row .columns {
@@ -77,8 +97,8 @@ img, object, embed { max-width: 100%; height: auto; }
 		float: none;
 		margin-left: 0;
 		margin-right: 0;
-		right: auto;
 		left: auto;
-		padding-bottom:$column-spacing;
+		right: auto;
+		padding-bottom:$column-spacing/2;
 	}
 }
